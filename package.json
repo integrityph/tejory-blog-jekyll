@@ -1,0 +1,19 @@
+{
+  "name": "tejory-blog1",
+  "version": "1.0.0",
+  "main": "postcss.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:tailwind-style": "tailwindcss -i ./css/style.css -o ./css/public/style.css",
+    "watch:tailwind-style": "tailwindcss -i ./css/style.css -o ./css/public/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.2",
+    "tailwindcss": "^4.0.6"
+  }
+}
