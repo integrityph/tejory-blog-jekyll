@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{{ page.title }}</title>
     <link rel="shortcut icon" href="static/assets/images/TEJORY_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="static/assets/css/public/style.css">
     <link href="https://fonts.cdnfonts.com/css/nexa-bold" rel="stylesheet">
@@ -148,9 +148,26 @@
             </div>
         </nav>
 
-        <p
-            class="text-2xl md:text-4xl pt-20 pb-5 text-center lg:px-[180px] dark:text-white font-bold flex items-center justify-center lg:justify-start gap-5  bg-neutral-100 dark:bg-neutral-800">
-            Blog</p>
+        <div
+            class="text-base pt-20 pb-5 text-center lg:px-[180px] dark:text-white font-bold flex items-center justify-center lg:justify-between gap-5  bg-neutral-100 dark:bg-neutral-800">
+            <p class="hidden  md:flex">Introducing the Tejory App</p>
+            <a href="https://tejory.io/apps.html"><button type="button"
+                    class="hidden  md:flex text-white bg-neutral-800 border border-white focus:outline-none hover:bg-neutral-700 focus:ring-4 focus:ring-white font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-neutral-900 dark:text-white dark:border-white dark:hover:bg-neutral-900 dark:hover:border-neutral-600 dark:focus:ring-gray-700">Download
+                    Now</button></a>
+            <a class="flex md:hidden underline" href="https://tejory.io/apps.html">Introducing the Tejory App</a>
+        </div>
+
+        <div class="pt-20 pb-5 lg:px-[25%] dark:text-white">
+            <p class="text-2xl lg:text-5xl font-semibold">{{ page.title }}</p>
+            <p class="text-lg text-gray-700 dark:text-gray-400 py-2">{{ page.subtitle }}</p>
+            <p class="mb-5"><strong>Published on:</strong> {{ page.date | date: "%B %d, %Y" }}</p>
+            <img src="{{ page.images }}" alt="">
+            <div class="content mt-5">
+                {{ page.body }}
+                {{ content }}
+            </div>
+        </div>
+
 
         <footer class="px-10 relative bottom-0 w-full dark:bg-neutral-900 ">
             <div class="h-1 w-full bg-divider-dark"></div>
