@@ -224,13 +224,13 @@
                 <p
                     class="pt-20 pb-5 lg:px-[180px] px-5 dark:text-white font-bold text-3xl flex items-center gap-5  bg-transparent">
                     Ensuring Compliance: Tejory's Commitment to Regulatory Standards</p>
-                <div class="flex justify-center item-center flex-wrap p-10 lg:flex-nowrap gap-5 lg:px-28">
+                <div class="flex justify-center item-center flex-wrap md:p-10 lg:flex-nowrap gap-5 lg:px-28">
                     {% for post in site.posts limit:4%}
 
                     <div
-                        class="group max-w-3xl md:w-2/4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-700 dark:border-gray-700 transform transition duration-500 hover:scale-90 overflow-hidden">
+                        class="group max-w-3xl md:w-2/4 bg-white md:border md:border-gray-200 md:rounded-lg md:shadow  dark:bg-neutral-900 dark:md:bg-gray-700 dark:border-gray-700 transform transition duration-500 hover:md:scale-90 overflow-hidden">
                         <a href="#" class="overflow-hidden transition duration-300 ease-in-out dark:border-gray-700">
-                            <img class="rounded-t-lg w-full max-h-72 object-cover animate-fade-in  transform opacity-100 transition duration-500 group-hover:scale-110"
+                            <img class="md:rounded-t-lg w-full max-h-72 object-cover animate-fade-in  transform opacity-100 transition duration-500 group-hover:md:scale-110"
                                 src="{{ post.images }}" alt="" />
                         </a>
                         <div class="p-5">
