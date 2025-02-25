@@ -52,7 +52,7 @@ jobs:
         run: git checkout -b website
 
       - name: add
-        run: git add ./_site/*.html
+        run: git add .
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
