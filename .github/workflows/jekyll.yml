@@ -42,12 +42,6 @@ jobs:
       - name: Debug - List Generated Files
         run: ls -lah _site
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          name: github-pages
-          path: _site  # Ensure files are in the correct directory
-          
       - name: checkout
         run: git checkout -b website
 
@@ -58,6 +52,14 @@ jobs:
         with:
           branch: website
           push_options: '--force'
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          name: github-pages
+          path: _site  # Ensure files are in the correct directory
+          
+ 
 
   deploy:
     environment:
