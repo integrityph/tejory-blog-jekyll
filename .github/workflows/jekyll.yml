@@ -54,10 +54,10 @@ jobs:
       - name: add
         run: git add .
 
-      - uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: website
-          push_options: '--force'
+      # - uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     branch: website
+      #     push_options: '--force'
 
   deploy:
     environment:
