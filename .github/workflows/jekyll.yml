@@ -41,24 +41,24 @@ jobs:
           JEKYLL_ENV: production    
       - name: Debug - List Generated Files
         run: ls -lah _site
-
-      - name: checkout
-        run: git checkout -b website
-
-      - name: add
-        run: git add .
-
-      - uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: website
-          push_options: '--force'
-
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages
           path: _site  # Ensure files are in the correct directory
           
+      - name: checkout
+        run: git checkout -b website
+
+      - name: add
+        run: git add ./_site/*.html
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          branch: website
+          push_options: '--force'
+     
  
 
   deploy:
