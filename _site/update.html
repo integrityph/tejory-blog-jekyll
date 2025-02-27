@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tejory Launch</title>
     <link rel="shortcut icon" href="static/assets/images/TEJORY_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="static/assets/css/public/style.css">
     <link href="https://fonts.cdnfonts.com/css/nexa-bold" rel="stylesheet">
@@ -148,134 +148,29 @@
             </div>
         </nav>
 
-        <p
-            class="text-2xl md:text-4xl pt-20 pb-5 text-center lg:px-[180px] dark:text-white font-bold flex items-center justify-center lg:justify-start gap-5  bg-neutral-100 dark:bg-neutral-800">
-            Blog</p>
-
-        <!-- <div class="h-auto md:h-[calc(100dvh-140px)] flex flex-col justify-between">
-    
-            </div> -->
-        <div class="w-full mt-5 flex flex-wrap gap-5 justify-start items-center">
-            <div class="w-full">
-                <swiper-container class="mySwiper w-full h-full" pagination="true" pagination-clickable="true"
-                    space-between="30" centered-slides="true" autoplay-delay="2500"
-                    autoplay-disable-on-interaction="false">
-                    <swiper-slide
-                        class="w-full h-auto md:h-80 dark:bg-transparent flex justify-center item-center p-5 mb-5">
-                        <a href="#"
-                            class="flex flex-col gap-5 items-center rounded-lg  md:flex-row overflow-hidden bg-transparent">
-                            <img class="object-contain w-full h-full md:object-cover md:w-1/2 self-start rounded-lg "
-                                src="static/assets/images/slides/Slide_0.png" alt="">
-                            <div class="flex flex-col justify-start self-start pt-0 md:pt-20 p-4 leading-normal">
-                                <h5 class="mb-2 text-5xl font-bold tracking-tight text-gray-900 dark:text-white">Tejory
-                                    launch</h5>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Tempora, molestias.</p>
-                            </div>
-                        </a>
-                    </swiper-slide>
-                    <swiper-slide
-                        class="w-full h-auto md:h-80 dark:bg-transparent flex justify-center item-center p-5 mb-5">
-                        <a href="#"
-                            class="flex flex-col gap-5 items-center rounded-lg  md:flex-row overflow-hidden bg-transparent">
-                            <img class="object-contain w-full h-full md:object-cover md:w-1/2 self-start rounded-lg "
-                                src="static/assets/images/slides/Slide_1.png" alt="">
-                            <div class="flex flex-col justify-start self-start pt-0 md:pt-20 p-4 leading-normal">
-                                <h5 class="mb-2 text-5xl font-bold tracking-tight text-gray-900 dark:text-white">Tejory
-                                    launch</h5>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Tempora, molestias.</p>
-                            </div>
-                        </a>
-                    </swiper-slide>
-                    <swiper-slide
-                        class="w-full h-auto md:h-80 dark:bg-transparent flex justify-center item-center p-5 mb-5">
-                        <a href="#"
-                            class="flex flex-col gap-5 items-center rounded-lg  md:flex-row overflow-hidden bg-transparent">
-                            <img class="object-contain w-full h-full md:object-cover md:w-1/2 self-start rounded-lg "
-                                src="static/assets/images/slides/Slide_2.png" alt="">
-                            <div class="flex flex-col justify-start self-start pt-0 md:pt-20 p-4 leading-normal">
-                                <h5 class="mb-2 text-5xl font-bold tracking-tight text-gray-900 dark:text-white">Tejory
-                                    launch</h5>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Tempora, molestias.</p>
-                            </div>
-                        </a>
-                    </swiper-slide>
-                    <swiper-slide
-                        class="w-full h-auto md:h-80 dark:bg-transparent flex justify-center item-center p-5 mb-5">
-                        <a href="#"
-                            class="flex flex-col gap-5 items-center rounded-lg  md:flex-row overflow-hidden bg-transparent">
-                            <img class="object-contain w-full h-full md:object-cover md:w-1/2 self-start rounded-lg "
-                                src="static/assets/images/slides/Slide_3.png" alt="">
-                            <div class="flex flex-col justify-start self-start pt-0 md:pt-20 p-4 leading-normal">
-                                <h5 class="mb-2 text-5xl font-bold tracking-tight text-gray-900 dark:text-white">Tejory
-                                    launch</h5>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Tempora, molestias.</p>
-                            </div>
-                        </a>
-                    </swiper-slide>
-
-                </swiper-container>
-            </div>
-
-            <div class="flex flex-col justify-center item-center w-full">
-                <p
-                    class="pt-20 pb-5 lg:px-[180px] px-5 dark:text-white font-bold text-3xl flex items-center gap-5  bg-transparent">
-                    Ensuring Compliance: Tejory's Commitment to Regulatory Standards</p>
-                <div class="flex justify-center item-center flex-wrap md:p-10 lg:flex-nowrap gap-5 lg:px-28">
-                    {% for post in site.posts limit:4%}
-
-                    <div
-                        class="group max-w-3xl md:w-2/4 bg-white md:border md:border-gray-200 md:rounded-lg md:shadow  dark:bg-neutral-900 dark:md:bg-gray-700 dark:border-gray-700 transform transition duration-500 hover:md:scale-90 overflow-hidden">
-                        <a href="#" class="overflow-hidden transition duration-300 ease-in-out dark:border-gray-700">
-                            <img class="md:rounded-t-lg w-full max-h-72 object-cover animate-fade-in  transform opacity-100 transition duration-500 group-hover:md:scale-110"
-                                src="{{ post.images }}" alt="" />
-                        </a>
-                        <div class="p-5">
-                            <a href="#" class="">
-                                <div class="flex justify-start gap-5 items-center">
-                                    {% if post.author == "" or post.author == nil %}
-                                    <p class="text-sm font-semibold text-gray-700 dark:text-gray-400">by Anonymous</p>
-                                    {% else %}
-                                    <p class="text-sm font-semibold text-gray-700 dark:text-gray-400">by {{ post.author
-                                        }}</p>
-                                    {% endif %}
-
-
-                                    <p class="text-sm  font-semibold text-gray-700 dark:text-gray-400">{{ post.date |
-                                        date:
-                                        "%B %d, %Y" }}
-                                    </p>
-                                </div>
-
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{
-                                    post.title }}</h5>
-
-                            </a>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400  break-words">{{
-                                post.subtitle }}</p>
-                            <a href="{{ site.baseurl }}{{ post.url }}"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-900  rounded-lg hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:hover:bg-gray-800 dark:focus:ring-blue-800">
-                                Read more
-                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    {% endfor %}
-
-                </div>
-            </div>
-
-
-
+        <div
+            class="text-base pt-20 pb-5 text-center lg:px-[180px] dark:text-white font-bold flex items-center justify-center lg:justify-between gap-5  bg-neutral-100 dark:bg-neutral-800">
+            <p class="hidden  md:flex">Introducing the Tejory App</p>
+            <a href="https://tejory.io/apps.html"><button type="button"
+                    class="hidden  md:flex text-white bg-neutral-800 border border-white focus:outline-none hover:bg-neutral-700 focus:ring-4 focus:ring-white font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-neutral-900 dark:text-white dark:border-white dark:hover:bg-neutral-900 dark:hover:border-neutral-600 dark:focus:ring-gray-700">Download
+                    Now</button></a>
+            <a class="flex md:hidden underline" href="https://tejory.io/apps.html">Introducing the Tejory App</a>
         </div>
+
+        <div class="pt-20 pb-5 lg:px-[25%] dark:text-white">
+            <p class="text-2xl lg:text-5xl font-semibold">Tejory Launch</p>
+            <p class="text-lg text-gray-700 dark:text-gray-400 py-2">Tejory's launch marks a significant milestone in the evolution of cryptocurrency wallets, offering not just a secure storage solution but a comprehensive platform for financial empowerment. </p>
+            <p class="mb-5"><strong>Published on:</strong> February 22, 2025</p>
+            <img src="static/assets/images/slides/Slide_0.png" alt="">
+            <div class="content mt-5">
+
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                
+
+            </div>
+        </div>
+
+
         <footer class="px-10 relative bottom-0 w-full dark:bg-neutral-900 ">
             <div class="h-1 w-full bg-divider-dark"></div>
             <div class="flex justify-center gap-2 flex-col p-2">
