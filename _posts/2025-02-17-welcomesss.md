@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Test Article1"
+title:  "Tejory Security"
 date:   2025-02-21 02:06:54 +0800
-subtitle: "Tejory's launch marks a significant milestone in the evolution of cryptocurrency wallets, offering not just a secure storage solution but a comprehensive platform for financial empowerment. "
-body: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+subtitle: "Tejory places a strong emphasis on security and protection, ensuring that users’ digital assets remain safe from cyber threats, unauthorized access, and fraud. "
+body: "All user transactions and data are protected using end-to-end encryption, preventing third parties from intercepting sensitive information. This encryption applies to private keys, login credentials, and communication within the platform."
 permalink : /test-blog-atricle1
 categories: tejory update
-images: static/assets/images/slides/Slide_0.png
+images: static/assets/images/slides/Slide_1.png
 ---

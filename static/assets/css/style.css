@@ -215,6 +215,20 @@ html::-webkit-scrollbar-thumb {
   opacity: 0;
 }
 
+.break {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.break1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
 @media (max-width: 768px) {
   .card :is(svg, h2, p) {
     opacity: 1;
