@@ -794,20 +794,12 @@ video {
   max-height: 18rem;
 }
 
-.min-h-\[300px\] {
-  min-height: 300px;
+.min-h-\[200px\] {
+  min-height: 200px;
 }
 
 .min-h-dvh {
   min-height: 100dvh;
-}
-
-.min-h-\[250px\] {
-  min-height: 250px;
-}
-
-.min-h-\[200px\] {
-  min-height: 200px;
 }
 
 .w-1\/2 {
@@ -1828,6 +1820,10 @@ html::-webkit-scrollbar-thumb {
 
 .dark\:bg-transparent:is(.dark *) {
   background-color: transparent;
+}
+
+.dark\:fill-white:is(.dark *) {
+  fill: #fff;
 }
 
 .dark\:text-blue-500:is(.dark *) {
